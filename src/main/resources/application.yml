@@ -1,7 +1,12 @@
 blog:
-  name: Tidy Java
-  repositoryUrl: https://github.com/tidyjava/tidyjava-contents.git
+  name: Put Your Blog Name Here
+  repositoryUrl: https://github.com/tidyjava/blogging-platform-hello-world.git
+  url: http://localhost:8080
 
 analytics:
-  enabled: true
-  trackingCode: UA-75842902-1
+  enabled: false
+  trackingCode:
+
+disqus:
+  enabled: false
+  name:

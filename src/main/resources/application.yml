@@ -1,3 +1,7 @@
 blog:
   name: Tidy Java
   repositoryUrl: https://github.com/tidyjava/tidyjava-contents.git
+
+analytics:
+  enabled: true
+  trackingCode: UA-75842902-1

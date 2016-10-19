@@ -1,7 +1,9 @@
 blog:
   name: Tidy Java
-  repositoryUrl: https://github.com/tidyjava/tidyjava-contents.git
   url: http://tidyjava.herokuapp.com
+
+git:
+  repository: https://github.com/tidyjava/tidyjava-contents.git
 
 analytics:
   enabled: true

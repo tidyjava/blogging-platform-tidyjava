@@ -1,7 +1,9 @@
 blog:
   name: Tidy Java
-  repositoryUrl: https://github.com/tidyjava/tidyjava-contents.git
   url: http://tidyjava.herokuapp.com
+
+git:
+  repository: https://github.com/tidyjava/tidyjava-contents.git
 
 analytics:
   enabled: true
@@ -10,3 +12,12 @@ analytics:
 disqus:
   enabled: true
   name: tidyjava
+
+social:
+  links:
+    - name: Twitter
+      url: http://twitter.com/grzegorztj
+    - name: GitHub
+      url: http://github.com/tidyjava
+    - name: RSS
+      url: http://tidyjava.herokuapp.com/rss

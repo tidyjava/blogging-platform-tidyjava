@@ -1,6 +1,6 @@
 blog:
   name: Tidy Java
-  url: http://tidyjava.herokuapp.com
+  url: http://tidyjava.com
 
 git:
   repository: https://github.com/tidyjava/tidyjava-contents.git
@@ -20,4 +20,4 @@ social:
     - name: GitHub
       url: http://github.com/tidyjava
     - name: RSS
-      url: http://tidyjava.herokuapp.com/rss
+      url: http://tidyjava.com/rss

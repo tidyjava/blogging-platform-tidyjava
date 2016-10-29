@@ -16,17 +16,21 @@ public class PostController {
     @Value("${blog.name}")
     private String blogName;
 
+    @Value("${blog.description}")
+    private String blogDescription;
+
     @Autowired
     private PostReaderImpl postReader;
 
     @RequestMapping("/")
     public String home(Model model) {
         model.addAttribute("title", blogName);
+        model.addAttribute("subtitle", blogDescription);
         model.addAttribute("posts", postReader.readAll());
         return "home";
     }
 
-    @RequestMapping("/{path}")
+    @RequestMapping(Post.URL_PREFIX + "{path}")
     public String post(@PathVariable("path") String path, Model model) {
         Post post = postReader.readOne(path);
         model.addAttribute("title", post.getTitle());
@@ -34,7 +38,7 @@ public class PostController {
         return "post";
     }
 
-    @RequestMapping("/tag/{path}")
+    @RequestMapping(Tag.URL_PREFIX + "{path}")
     public String tag(@PathVariable("path") String path, Model model) {
         model.addAttribute("title", path);
         model.addAttribute("tag", path);

@@ -1,5 +1,6 @@
 blog:
   name: Tidy Java
+  description: Weekly coding articles for Java developers.
   url: http://tidyjava.com
 
 git:

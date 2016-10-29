@@ -37,6 +37,8 @@ class PostControllerIntegrationSpec extends Specification {
                 .andReturn()
 
         result.modelAndView.model.title == 'Test Blog'
+        result.modelAndView.model.subtitle == 'What we test, we believe.'
+
         def posts = result.modelAndView.model.posts
         "assert post contains test data"(posts[0], 2, ['tagged'])
         "assert post contains test data"(posts[1], 1, ['tagged', 'first'])
@@ -97,8 +99,14 @@ class PostControllerIntegrationSpec extends Specification {
         assert post.date.format(ISO_LOCAL_DATE) == "197$n-01-01"
         assert post.url == "/post$n"
         assert post.content == "<p><strong>Content $n</strong></p>\n"
-        assert post.tags == tags
+        assert post.tags == toTags(tags)
         assert post.author == "Author $n"
+    }
+
+    def toTags(tags) {
+        tags.collect {
+            new Tag(it)
+        }
     }
 
     void "assert post contains tilt data"(post) {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="6hAmRlX4Xx_xbEcMgQcVnvoJB0GCiok2E7OGv4LUEVg" />
 
     <title>${title!"TILT!"}</title>
 
